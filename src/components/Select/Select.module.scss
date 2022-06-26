@@ -1,0 +1,89 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding-left: 5px;
+    height: 28px;
+    border: 1px solid black;
+    display: flex;
+    max-width: 60px;
+    > div {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: #555458;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    > span {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        cursor: pointer;
+        div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto 0;
+            margin-left: 8px;
+            height: auto;
+            transition: ease 0.25s;
+        }
+    }
+    ul {
+        background-color: white;
+        border-radius: 12px;
+        position: absolute;
+        top: -40px;
+        transform: translateY(-100%);
+        right: 0px;
+        overflow: hidden;
+        max-height: 0;
+        padding: 0;
+        li {
+            cursor: pointer;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 8px 0;
+            border-bottom: 1px solid black;
+            list-style: none;
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: 0;
+            }
+        }
+        .activeMenuItem {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #d8d8d84b;
+            cursor: inherit;
+        }
+    }
+}
+.activeMenu {
+    ul {
+        border: 1px solid black;
+        max-height: inherit;
+        padding: 16px;
+    }
+    span {
+        div {
+            transform: rotate(180deg);
+            transition: ease 0.25s;
+        }
+    }
+}

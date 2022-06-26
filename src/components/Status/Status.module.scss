@@ -1,0 +1,24 @@
+.container{
+    color: white;
+    div{
+        text-align: center;
+        border-radius: 8px;
+        padding: 5px;
+        font-weight: 600;
+    }
+    .red{
+        background-color: #9b2d30;
+    }
+    .green{
+        background-color: #039660;
+    }
+    .yellow{
+        background-color: #b07d2b;
+    }
+    .blue{
+        background-color: #002137;
+    }
+    .black{
+        background-color: #000;
+    }
+}
